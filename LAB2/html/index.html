@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale">
+    <title>Document</title>
+</head>
+<body>
+    <p id="title">Hello Docker !!</p>
+
+    <script stc="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+</body>
+</html>
+
+<script>
+    var num = 10;
+    let name = "Am";
+    age = 19;
+    const year = 2004;
+
+    console.log(year);
+    fruit = ["banana","apple","orange"];
+    plant = {fruit:"banana", car:"nissan",color:"orange"};
+    dataJson = {
+    employee:[{name: "Am"} ,{ age: 19},{year:2004}],
+    };
+       
+console.log(dataJson.employee[0].name);
+
+let msg = name +year;
+
+console.log(msg);
+
+document.getElementById('title').innerHTML = msg;
+
+$(function () {
+    $("#title")
+    .html(msg + "jQuery")
+})
+</script>
