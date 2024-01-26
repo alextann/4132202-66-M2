@@ -12,4 +12,4 @@ services:
       FTP_USER_NAME: bru
       FTP_USER_PASS: 1234
       FTP_USER_HOME: /home/bru
-  
+    command: /run.sh pure-ftpd -1 puredb:/etc/pure-ftpd/pureftpd.pdb -E -j -R -P localhost -s -A -j -z -H -4 -E -R -X -x  -p 30000:30009 -c 5 -c 5
