@@ -1,36 +1,30 @@
 var num = 10;
-    let name = "apec";
-    age = 20;
-    const year = 2003;
-
+    let name = "Sorn";
+    age = 22;
+    const year = 2001;
     console.log(year);
-
-
-    fruit = ["banana","apple","orage"];
-
-
+    
+    fruit = ["banana","apple","orange"];
     console.log(fruit[1]);
 
-
-    plant = {fruit: "banana", car: "nissan", color:"orage"};
-
+    plant = {fruit: "banana", acr: "nissan", color: "orange"};
     console.log(plant);
 
     dataJson = {
-employee:[{ name:"apec" }, { age:20 }, { year: 2003}],
+        employee:[
+            {name: "Sorn"},
+            {age: 22},
+            {year: 2001},
+        ]
     };
 
-console.log(dataJson.employee[0].name);
-
-    let msg = name + " " +year;
+    console.log(dataJson.employee[0].name);
+    let msg = name + year;
     msg = `${name} ${year}`;
-
     console.log(msg);
-
-    document.getElementById('title').innerHTML = msg;
-
+    document.getElementById("title").innerHTML = msg;
     $(function(){
-        $("#title")
-        .html(msg + " jQuery")
-        .addClass('red')
+        $('#title')
+          .html(msg + 'jQuery')
+          .addClass("red");
     });
